@@ -28,6 +28,7 @@ class PN_EventHandler : StaticEventHandler
 		spawn_groups[13].replacee = "PainElemental"; spawn_groups[13].replacement = "PN_Eye"; spawn_groups[13].leftovers = 0;
 		spawn_groups[14].replacee = "SpiderMastermind"; spawn_groups[14].replacement = "PN_SkeleGoyle"; spawn_groups[14].leftovers = 0;
 		spawn_groups[15].replacee = "Cyberdemon"; spawn_groups[15].replacement = "PN_SkeleGoyle"; spawn_groups[15].leftovers = 0;
+		spawn_groups[16].replacee = "Archvile"; spawn_groups[16].replacement = "PN_Abomination"; spawn_groups[16].leftovers = 0;
 	}
 
 	override void WorldLoaded(WorldEvent e)
@@ -58,7 +59,7 @@ class PN_EventHandler : StaticEventHandler
 
 		// Monsters:
 
-		for(int i = 0; i <= 5; ++i)
+		for(int i = 0; i <= 16; ++i)
 			if(e.Replacee is spawn_groups[i].replacee){
 				spawn_groups[i].cur_leftovers += spawn_groups[i].leftovers;
 				if(spawn_groups[i].cur_leftovers <= -256){
