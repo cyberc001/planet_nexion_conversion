@@ -1,0 +1,35 @@
+mugshot "Normal"
+{
+	{ST00, ST01, ST02} 25;
+}
+
+mugshot "Pain"
+{
+	OUCH0 35;
+}
+mugshot "Ouch"
+{
+	OUCH0 35;
+}
+mugshot "Death"
+{
+	DEAD0 -1;
+}
+mugshot "XDeath"
+{
+	DEAD0 -1;
+}
+
+mugshot "Grin"
+{
+	KILL0 70;
+}
+mugshot "Rampage"
+{
+	KILL0 1;
+}
+
+mugshot "God"
+{
+	OUCH0 -1;
+}

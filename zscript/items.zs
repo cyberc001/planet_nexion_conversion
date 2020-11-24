@@ -1,0 +1,5 @@
+#include "zscript/items/alcohol.zs"
+#include "zscript/items/ether_vial.zs"
+#include "zscript/items/spiritual_heart.zs"
+#include "zscript/items/keys.zs"
+#include "zscript/items/score_items.zs"

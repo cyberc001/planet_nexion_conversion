@@ -1,0 +1,6 @@
+gameinfo
+{
+	playerclasses = "PN_Player"
+	addeventhandlers = "PN_EventHandler"
+	statusbarclass = "PN_StatusBar"
+}

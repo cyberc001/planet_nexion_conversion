@@ -1,0 +1,93 @@
+Clearlocks
+
+// Access cards (keycards)
+Lock 1 Doom
+{
+	PN_AccessCard_Red
+	Message "You need a red access card to open this door"
+	RemoteMessage "You need a red access card to activate this object"
+	Mapcolor 255 0 0
+}
+Lock 2 Doom
+{
+	PN_AccessCard_Blue
+	Message "You need a blue access card to open this door"
+	RemoteMessage "You need a blue access card to activate this object"
+	Mapcolor 0 0 255
+}
+Lock 3 Doom
+{
+	PN_AccessCard_Yellow
+	Message "You need a yellow access card to open this door"
+	RemoteMessage "You need a yellow access card to activate this object"
+	Mapcolor 255 255 0
+}
+
+// Cardonite (skulls)
+Lock 4 Doom
+{
+	PN_Cardonite_Red
+	Message "You need a red cardonite to open this door"
+	RemoteMessage "You need a red cardonite to activate this object"
+	Mapcolor 255 0 0
+}
+Lock 5 Doom
+{
+	PN_Cardonite_Blue
+	Message "You need a blue cardonite to open this door"
+	RemoteMessage "You need a blue cardonite to activate this object"
+	Mapcolor 0 0 255
+}
+Lock 6 Doom
+{
+	PN_Cardonite_Yellow
+	Message "You need a yellow cardonite to open this door"
+	RemoteMessage "You need a yellow cardonite to activate this object"
+	Mapcolor 255 255 0
+}
+
+// Any of both + heretic prism keys
+Lock 129 Doom
+{
+	Any { PN_AccessCard_Red PN_Cardonite_Red KeyGreen }
+	Message "You need a red access card to open this door"
+	RemoteMessage "You need a red access card to activate this object"
+	Mapcolor 255 0 0
+}
+Lock 130 Doom
+{
+	Any { PN_AccessCard_Blue PN_Cardonite_Blue KeyBlue }
+	Message "You need a blue access card to open this door"
+	RemoteMessage "You need a blue access card to activate this object"
+	Mapcolor 0 0 255
+}
+Lock 131 Doom
+{
+	Any { PN_AccessCard_Yellow PN_Cardonite_Yellow KeyYellow }
+	Message "You need a yellow access card to open this door"
+	RemoteMessage "You need a yellow access card to activate this object"
+	Mapcolor 255 255 0
+}
+
+// Any of both
+Lock 132 Doom
+{
+	Any { PN_AccessCard_Red PN_Cardonite_Red KeyGreen }
+	Message "You need a red access card to open this door"
+	RemoteMessage "You need a red access card to activate this object"
+	Mapcolor 255 0 0
+}
+Lock 133 Doom
+{
+	Any { PN_AccessCard_Blue PN_Cardonite_Blue KeyBlue }
+	Message "You need a blue access card to open this door"
+	RemoteMessage "You need a blue access card to activate this object"
+	Mapcolor 0 0 255
+}
+Lock 134 Doom
+{
+	Any { PN_AccessCard_Yellow PN_Cardonite_Yellow KeyYellow }
+	Message "You need a yellow access card to open this door"
+	RemoteMessage "You need a yellow access card to activate this object"
+	Mapcolor 255 255 0
+}

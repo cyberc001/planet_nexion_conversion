@@ -1,0 +1,15 @@
+HardwareShader postprocess scene
+{
+	Name "PN_Drunk"
+	Shader "shaders/glsl/drunk.fp" 330
+	Uniform int ethanol_level
+	Uniform int ethanol_max
+	Uniform int tick
+}
+HardwareShader postprocess scene
+{
+	name "PN_VisionDamage"
+	Shader "shaders/glsl/vision_dmg.fp" 330
+	Uniform int vision_dmg
+	Uniform int vision_dmg_effect_max
+}

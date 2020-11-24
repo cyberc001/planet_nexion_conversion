@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in ./*.BMP;
+do
+	convert $i -transparent 'rgb(0,0,0)' $(echo $i | sed "s/.BMP/.png/")
+done

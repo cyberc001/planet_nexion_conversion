@@ -1,0 +1,29 @@
+$pitchshiftrange 3
+weapons/deathbone/attack	DSSWING
+weapons/atom_shredder/attack	DSSHRAT
+weapons/plasma_burner/attack	DSDRATK
+weapons/bh_generator/attack	DSBHATK
+
+enemies/generic/gib_death1	DSENGB1
+enemies/generic/gib_death2	DSENGB2
+
+$random enemies/generic/gib_death	{enemies/generic/gib_death1 enemies/generic/gib_death2}
+
+enemies/zombie/attack		DSZMATK
+$random enemies/zombie/death	{ enemies/zombie/death1 enemies/zombie/death2 }
+enemies/zombie/death1		DSZMDT1
+enemies/zombie/death2		DSZMDT2
+$random enemies/zombie/see	{ enemies/zombie/see1 enemies/zombie/see2 }
+enemies/zombie/see1		DSZMSE1
+enemies/zombie/see2		DSZMSE2
+
+enemies/eye/attack		DSEYATK
+
+enemies/drone/see		DSDRSEE
+
+enemies/ceiling_hanger/attack	DSCHATK
+
+enemies/abomination/death	DSABDTH
+
+enemies/skelegoyle/see		DSSGSEE
+enemies/skelegoyle/death	DSSGDTH

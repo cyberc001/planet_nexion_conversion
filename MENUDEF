@@ -1,0 +1,53 @@
+OptionValue "PN_PStart"
+{
+	0, "deathbone"
+	1, "deathbone & atom shredder"
+}
+
+AddOptionMenu "OptionsMenu"
+{
+	SubMenu "Planet Nexion: Conversion menu", "PN_MainMenu"
+}
+
+OptionMenu "PN_MainMenu"
+{
+	Title "PLANET NEXION: CONVERSION"
+
+	StaticText "Balance", "Green"
+	Option "Player starts with", pn_pstart, "PN_PStart"
+	
+	StaticText ""
+
+	StaticText "Credits", "Green"
+	Submenu "See credits", "PN_Credits"
+}
+
+OptionMenu "PN_Credits"
+{
+	Title "CREDITS"
+
+	StaticText "Story, graphics, sounds, and code for the original WOLF3D mod"
+	StaticText "Nexion", "white"
+
+	StaticText ""
+
+	StaticText "Some other sounds"
+	StaticText "Nightflame (freesound.com)", "white"
+
+	StaticText ""
+
+	StaticText "GZDoom engine documentation"
+	StaticText "ZDoom wiki", "white"
+	StaticText "marrub", "white"
+
+	StaticText ""
+
+	StaticText "Code for the conversion DOOM mod"
+	StaticText "cyb3r_c001", "white"
+
+	StaticText ""
+	StaticText ""
+
+	StaticText "Thank you for playing my mod!"
+}
+
