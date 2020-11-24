@@ -8,7 +8,7 @@ struct PN_Spawn_Group
 
 class PN_EventHandler : StaticEventHandler
 {
-	PN_Spawn_Group spawn_groups[16];
+	PN_Spawn_Group spawn_groups[17];
 
 	override void OnRegister()
 	{
