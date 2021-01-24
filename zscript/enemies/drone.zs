@@ -50,11 +50,11 @@ class PN_Drone : PN_Monster
 			Loop;
 
 		Missile:
-			DRON K 6 A_FaceTarget;
+			DRON K 8 A_FaceTarget;
 			DRON L 0 A_StartSound("weapons/plasma_burner/attack", CHAN_WEAPON);
-			DRON L 6 A_FaceTarget;
-			DRON M 4 A_CustomBulletAttack(spr, spr, 1, 10 + random(0,5)*2, "", 0, CBAF_NORANDOM);
-			DRON N 4 {
+			DRON L 8 A_FaceTarget;
+			DRON M 5 A_CustomBulletAttack(spr, spr, 1, 5 + random(0,5)*2, "", 0, CBAF_NORANDOM);
+			DRON N 6 {
 					if(spr - spr_dec > spr_min)
 						spr -= spr_dec; 
 					else

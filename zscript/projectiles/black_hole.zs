@@ -17,13 +17,15 @@ class PN_Black_Hole : Actor
 	float real_height;
 
 	int self_dmg_cd;
+	int pull_cd;
 
 	bool is_dissapearing;
 
 	override void BeginPlay()
 	{
 		super.BeginPlay();
-		self_dmg_cd = 35;
+		self_dmg_cd = 60;
+		pull_cd = 30;
 		is_dissapearing = false;
 	}
 	override void PostBeginPlay()
@@ -40,7 +42,10 @@ class PN_Black_Hole : Actor
 		if(self_dmg_cd > 0)
 			self_dmg_cd--;
 
-		A_RadiusThrust(-150 * (self.radius / 16), self.radius * 8, RTF_NOIMPACTDAMAGE | RTF_THRUSTZ | RTF_AFFECTSOURCE);
+		if(pull_cd > 0)
+			pull_cd--;
+		else
+			A_RadiusThrust(-150 * (self.radius / 16), self.radius * 8, RTF_NOIMPACTDAMAGE | RTF_THRUSTZ | RTF_AFFECTSOURCE);
 
 		BlockThingsIterator it = BlockThingsIterator.Create(self, 1024);
 		Actor a;

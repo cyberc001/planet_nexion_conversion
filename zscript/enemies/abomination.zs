@@ -37,7 +37,7 @@ class PN_Abomination : PN_Monster
 
 		acid_reserve = 0;
 
-		fear_health = 250;
+		fear_health = 200;
 		fear_time = 15 * 17;
 		fear_cd = 60 * 17;
 		fear_timer = 0;
@@ -177,7 +177,7 @@ class PN_Abomination_SlowPuff : actor
 				}
 				else if(tracer && tracer.bISMONSTER){
 					target.health += 50;
-					PN_Abomination(target).acid_reserve += 15;
+					PN_Abomination(target).acid_reserve += 20;
 				}
 			}
 			Stop;

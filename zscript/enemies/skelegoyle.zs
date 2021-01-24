@@ -3,7 +3,7 @@ class PN_SkeleGoyle : PN_Monster
 {
 	default
 	{
-		Health 2500;
+		Health 2400;
 
 		Radius 64;
 		Height 64;

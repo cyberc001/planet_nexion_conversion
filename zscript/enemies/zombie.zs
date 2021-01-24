@@ -62,13 +62,13 @@ class PN_Zombie : PN_Monster
 			ZOMB G 0 A_JumpIf(random(1, 6) == 1 || (Distance2D(target) > 90.0 && random(1,3) != 1), "MeleeLeap");
 			ZOMB G 15 A_FaceTarget;
 			ZOMB H 0 A_StartSound("enemies/zombie/attack", CHAN_AUTO);
-			ZOMB H 12 A_CustomBulletAttack(0.0, 0.0, 1, 20 + random(0,3)*8, "", 80, CBAF_NORANDOM);
+			ZOMB H 12 A_CustomBulletAttack(0.0, 0.0, 1, 15 + random(0,3)*5, "", 75, CBAF_NORANDOM);
 			Goto See;
 		MeleeLeap:
 			ZOMB G 0 A_FaceTarget;
 			ZOMB G 0 A_StartSound("enemies/zombie/attack", CHAN_AUTO);
 			ZOMB G 15 A_ChangeVelocity(75.0 * (Distance2D(target) / 128.0), 0.0, 5.0, CVF_RELATIVE);
-			ZOMB H 25 A_CustomBulletAttack(0.0, 0.0, 1, 20 + random(0,3)*8, "", 70, CBAF_NORANDOM);
+			ZOMB H 25 A_CustomBulletAttack(0.0, 0.0, 1, 15 + random(0,3)*5, "", 65, CBAF_NORANDOM);
 		Dodge:
 			ZOMB A 0 A_FaceTarget;
 			ZOMB A 0 A_JumpIf(random(0,1) == 0, "DodgeRight");
